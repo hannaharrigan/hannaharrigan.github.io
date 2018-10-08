@@ -1,0 +1,36 @@
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  
+    grid-template-areas: 
+        "header header header header header"
+        "goodbutton instagram instagram instagram badbutton";       
+}
+
+#instagram {
+    background-color:red;
+    margin: auto;
+    grid-area:instagram;
+    justify-content: center;
+}
+
+#goodbutton {
+    grid-area:goodbutton;
+    font-family: 'VT323', monospace;
+    font-size: 65px;
+}
+
+#badbutton {
+    grid-area:badbutton;
+    font-family: 'VT323', monospace;
+    font-size: 65px;
+}
+
+header {
+    background-color:whitesmoke;
+    font-family: 'VT323', monospace;
+    font-size: 60px;
+    grid-area: header;
+    text-align: center;
+    border-style: dotted;
+}
+
